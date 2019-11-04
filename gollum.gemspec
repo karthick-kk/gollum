@@ -1064,6 +1064,7 @@ Gem::Specification.new do |s|
     lib/gollum/templates/pages.mustache
     lib/gollum/templates/search.mustache
     lib/gollum/templates/searchbar.mustache
+    lib/gollum/templates/user.mustache
     lib/gollum/uri_encode_component.rb
     lib/gollum/views/compare.rb
     lib/gollum/views/create.rb
