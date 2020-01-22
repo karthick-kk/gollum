@@ -42,10 +42,24 @@ a:hover, a:visited {
   text-decoration: underline;
 }
 
+/* disclaimer */
+#disclaimer {
+  display: none;
+}
+
 /* @section header */
 #header {
   border-bottom: 1px solid #ddd;
   padding: 10px 5px 0px 5px;
+}
+
+#header img {
+  vertical-align: middle;
+}
+
+#eu-logo {
+  height: 41px;
+  padding-left: 20px;
 }
 
 /* @section user */
