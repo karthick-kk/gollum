@@ -60,8 +60,28 @@
   <title>{{title}}</title>
 </head>
 <body>
+<div id="disclaimer">
+  Hi, this is a disclaimer.
+  <button id="disclaimer-btn" type="button">Ok</button>
+</div>
+<script>
+  function close_disclaimer () {
+    document.getElementById("disclaimer").style.display = "none";
+    document.cookie = "disclaimer-closed"
+  }
+  
+  document.getElementById("disclaimer-btn").addEventListener("click", close_disclaimer);
+  
+  // show disclaimer if disclaimer-closed cookie has not been set
+  if (!document.cookie.includes("disclaimer-closed")) {
+    document.getElementById("disclaimer").style.display = "";  
+  }
+</script>
 <div id="header">
-  <img src="https://www.hotmaps-project.eu/wp-content/uploads/2017/03/logo_footer.svg">
+  <a href=="Home" alt="Home">
+    <img src="https://www.hotmaps-project.eu/wp-content/uploads/2017/03/logo_footer.svg">
+  </a>
+  <img src="https://www.hotmaps-project.eu/wp-content/themes/JointsWP/assets/images/flag_europe.svg">
   {{< user}}
 </div>
 
