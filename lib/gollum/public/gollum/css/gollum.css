@@ -44,7 +44,39 @@ a:hover, a:visited {
 
 /* disclaimer */
 #disclaimer {
+  position: absolute;
+  text-align: justify;
+  font-size: medium;
+  margin: auto;
+  width: 100%;
+  height: 100%;  
   display: none;
+}
+
+#disclaimer-text {
+    background: white;
+    height: auto;
+}
+
+#disclaimer p {
+    padding: 1% 25%;
+    background: white;
+}
+
+#disclaimer-btn {
+    margin: 1% 25%;
+    background-color: #1e87f0;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    font-size: medium;
+}
+
+#disclaimer-overlay {
+    opacity: 70%;
+    background: black;
+    height: 100%;
+    width: 100%;
 }
 
 /* @section header */
