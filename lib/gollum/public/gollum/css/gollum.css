@@ -44,7 +44,6 @@ a:hover, a:visited {
 
 /* disclaimer */
 #disclaimer {
-  display: none;
   position: absolute;
   text-align: justify;
   font-size: medium;
