@@ -75,12 +75,21 @@
     document.cookie = "disclaimer-closed"
   }
   
-  document.getElementById("disclaimer-btn").addEventListener("click", close_disclaimer);
-  
-  // show disclaimer if disclaimer-closed cookie has not been set
-  if (!document.cookie.includes("disclaimer-closed")) {
-    document.getElementById("disclaimer").style.display = "";  
+  function init () { 
+    // show disclaimer if disclaimer-closed cookie has not been set
+    if (!document.cookie.includes("disclaimer-closed")) {
+      document.getElementById("disclaimer").style.display = "";  
+    }
+    
+    document.getElementById("disclaimer-btn").addEventListener("click", close_disclaimer);
   }
+
+  var readyStateCheckInterval = setInterval(function() {
+    if (document.readyState === "complete") {
+      clearInterval(readyStateCheckInterval);
+      init();
+    }
+  }, 10);  
 </script>
 <div id="header">
   <a href="Home" alt="Home">
